@@ -1,0 +1,14 @@
+{
+  "name": "@octohash/app-sample",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@vueuse/core": "catalog:utils",
+    "vue": "catalog:frontend",
+    "vue-router": "catalog:frontend"
+  }
+}

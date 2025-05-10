@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@octohash/tsconfig/web.json",
+  "compilerOptions": {
+    "types": [
+      "vite/client",
+      "unplugin-vue-router/client"
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

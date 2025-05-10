@@ -1,0 +1,11 @@
+{
+  "name": "@octohash/lib-sample",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "catalog:frontend"
+  }
+}

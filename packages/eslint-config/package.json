@@ -1,0 +1,47 @@
+{
+  "name": "@octohash/eslint-config",
+  "type": "module",
+  "version": "0.0.0",
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/uni-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/uni-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/uni-config/issues"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup --clean --dts"
+  },
+  "peerDependencies": {
+    "eslint": "catalog:lint",
+    "eslint-plugin-tailwindcss": "catalog:lint"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "catalog:lint",
+    "@antfu/install-pkg": "catalog:prod",
+    "@clack/prompts": "catalog:prod",
+    "eslint-flat-config-utils": "catalog:lint",
+    "local-pkg": "catalog:prod",
+    "semver": "catalog:prod"
+  },
+  "devDependencies": {
+    "@types/eslint-plugin-tailwindcss": "catalog:types",
+    "@types/semver": "catalog:types"
+  }
+}
