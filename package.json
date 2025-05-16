@@ -1,0 +1,54 @@
+{
+  "name": "@octohash/uni-config",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.11.0",
+  "description": "Pre-configured setup for Linter, Vite, Tailwind CSS, and more.",
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/uni-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/uni-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/uni-config/issues"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "lint": "eslint",
+    "commit": "czg",
+    "deps": "taze major -r -I",
+    "release": "bumpp -r && pnpm publish -r --no-git-checks",
+    "catalog": "pnpm pncat",
+    "prepare": "npx simple-git-hooks",
+    "bootstrap": "pnpm install",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@octohash/eslint-config": "workspace:*",
+    "@octohash/tsconfig": "workspace:*",
+    "@octohash/vite-config": "workspace:*",
+    "@types/node": "catalog:types",
+    "bumpp": "catalog:dev",
+    "czg": "catalog:dev",
+    "eslint": "catalog:lint",
+    "lint-staged": "catalog:lint",
+    "pncat": "catalog:dev",
+    "simple-git-hooks": "catalog:dev",
+    "taze": "catalog:dev",
+    "tsup": "catalog:build",
+    "tsx": "catalog:script",
+    "turbo": "catalog:dev",
+    "typescript": "catalog:dev",
+    "unbuild": "catalog:build",
+    "vite": "catalog:build",
+    "vitest": "catalog:test"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

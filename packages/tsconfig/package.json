@@ -1,0 +1,25 @@
+{
+  "name": "@octohash/tsconfig",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/uni-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/uni-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/uni-config/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web.json"
+  ]
+}
