@@ -1,0 +1,59 @@
+{
+  "name": "@octohash/vite-config",
+  "type": "module",
+  "version": "0.0.0",
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/uni-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/uni-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/uni-config/issues"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup --clean --dts"
+  },
+  "peerDependencies": {
+    "vite": "catalog:build"
+  },
+  "dependencies": {
+    "@clack/prompts": "catalog:prod",
+    "@vitejs/plugin-vue": "catalog:build",
+    "@vitejs/plugin-vue-jsx": "catalog:build",
+    "dayjs": "catalog:utils",
+    "deepmerge": "catalog:prod",
+    "find-up": "catalog:prod",
+    "local-pkg": "catalog:prod",
+    "pkg-types": "catalog:prod",
+    "rollup-plugin-visualizer": "catalog:build",
+    "unplugin-auto-import": "catalog:build",
+    "unplugin-vue-components": "catalog:build",
+    "unplugin-vue-router": "catalog:build",
+    "vite-plugin-dts": "catalog:build",
+    "vite-plugin-dynamic-base": "catalog:build"
+  },
+  "optionalDependencies": {
+    "@intlify/unplugin-vue-i18n": "catalog:i18n",
+    "@originjs/vite-plugin-federation": "catalog:build",
+    "vite-plugin-jspm": "catalog:build",
+    "vite-plugin-vue-devtools": "catalog:build"
+  },
+  "devDependencies": {
+    "@jspm/generator": "catalog:dev"
+  }
+}

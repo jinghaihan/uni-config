@@ -1,0 +1,33 @@
+{
+  "name": "@octohash/tailwind-config",
+  "type": "module",
+  "version": "0.0.0",
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/uni-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/uni-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/uni-config/issues"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup --clean --dts"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
